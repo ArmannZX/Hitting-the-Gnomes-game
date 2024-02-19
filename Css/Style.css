@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: GnomeFont;
+    src: url(../Fonts/Gnome.otf);
+}
+
+body {
+    font-family: Arial;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-image: url("../images/Backgournd.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.Background {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: linear-gradient(to top, transparent, rgba(40, 40, 40, 0.4));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+
+}
+
+.MainBody {
+    width: 500px;
+    height: 550px;
+    background-color: rgb(100, 8, 9);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-between;
+    border-radius: 3px;
+    z-index: 0;
+    box-shadow: 0 0 20px 0px #212121;
+}
+
+.Scores {
+    width: 480px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: #E4E2E5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.HolesSide {
+    width: 480px;
+    height: 400px;
+    background-color: rgb(138, 145, 74);
+    border-radius: 10px;
+    border: 5px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 15px;
+    user-select: none;
+    -webkit-user-drag: none;
+    box-shadow: inset 0 0 25px 1px #2a2a2a;
+}
+
+
+.Buttons {
+    width: 420px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Scores .Points {
+    font-size: 20px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.Scores .title {
+    font-family: cursive;
+    font-size: 20px;
+    color: #640809;
+    font-weight: bold;
+    letter-spacing: 5px;
+
+    border: 7px solid #640809;
+    padding: 20px;
+    border-radius: 50px;
+    user-select: none;
+}
+
+.Scores .Timer {
+    font-size: 20px;
+    font-weight: bold;
+    user-select: none;
+}
+
+#Start {
+    width: 120px;
+    height: 50px;
+    font-family: Andalus;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #770a0b;
+    color: white;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.HolesSide div {
+    position: relative;
+
+}
+
+.HolesSide .Holes {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-drag: none;
+    position: relative;
+    z-index: 0;
+}
+
+
+.Gnomes {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    right: -30px;
+    bottom: 30px;
+}
+
+.g {
+    opacity: 0;
+    transition: all 0.3s;
+}
